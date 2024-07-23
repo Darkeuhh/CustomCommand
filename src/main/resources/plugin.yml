@@ -1,0 +1,11 @@
+name: CustomCommand
+version: '1.0-SNAPSHOT'
+main: fr.clmt.customCommand.main
+api-version: '1.21'
+authors: [ Clmt ]
+description: A plugin for creating custom commands
+commands:
+  customcommand:
+    description: Create a custom command
+    permission: customcommand.use
+    aliases: [ cc , customcmd, ccmd, ccommand, customc, customcmd, customc, customcommand ]
