@@ -2,6 +2,7 @@ package fr.clmt.customCommand;
 
 import fr.clmt.customCommand.commands.CustomCommandMain;
 import fr.clmt.customCommand.commands.bcSubC;
+import fr.clmt.customCommand.commands.createCmdSubC;
 import fr.clmt.customCommand.tabCompleters.mainCompleter;
 import org.bukkit.command.TabCompleter;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -19,6 +20,7 @@ public final class main extends JavaPlugin {
         CustomCommandMain customCommandMain = new CustomCommandMain();
         getCommand("customcommand").setExecutor(customCommandMain);
         customCommandMain.registerCommand("bc", new bcSubC());
+        customCommandMain.registerCommand("createcmd", new createCmdSubC());
         TabCompleter mainTc = new mainCompleter();
         getCommand("customcommand").setTabCompleter(mainTc);
 

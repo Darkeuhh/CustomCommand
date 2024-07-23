@@ -7,5 +7,5 @@ description: A plugin for creating custom commands
 commands:
   customcommand:
     description: Create a custom command
-    permission: customcommand.use
+    permission: customcommand.maincmd.use
     aliases: [ cc , customcmd, ccmd, ccommand, customc, customcmd, customc, customcommand ]
